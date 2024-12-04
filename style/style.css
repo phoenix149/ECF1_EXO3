@@ -1,0 +1,113 @@
+/* CSS Général pour les ecrans de plus 992px */
+
+/* Reinitialise toute les marges et les padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Je met un background sur mon body */
+body {
+    background-image: url("../images/fond.png");
+    height: 100%;
+}
+
+/* Je configure mon header */
+header {
+    margin: 0 2% 0 2%;
+    background-color: #948f8b;
+    opacity: 0.80;
+    width: 96%;
+    height: 100px;
+    color: #0f7023;
+    text-align: center;
+}
+
+/* J'espace mon titre du haut de la page */
+#title {
+    padding-top: 30px;
+}
+
+/* Je configure mon formulaire */
+form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Je met les label de mon formulaire en couleur et en gras */
+.infos {
+    color: #0f7023;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px 2% 0 2%;
+    background-color: #948f8b;
+    opacity: 0.80;
+    width: 96%;
+    height: 500px;
+}
+
+
+.bouton {
+    background-color: #0f7023;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+
+.champs {
+    border-color: #0f7023;
+}
+
+.obligatoire {
+    color: #cf0202;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+#ligne1,
+#ligne2,
+#ligne3,
+#ligne4,
+#ligne5 {
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+
+#ligne6 {
+    margin-top: 20px;
+    display: flex;
+ }
+
+#s1 {
+    margin-right: 40%;
+}
+
+#s2 {
+    margin-right: 38%;
+}
+
+#s3 {
+    margin-right: 31.5%;
+}
+
+#s4 {
+    margin-right: 39.5%;
+}
+
+#s5 {
+    margin-right: 31.5%;
+}
+
+#send {
+    margin: 0 25% 0 14%;
+}
