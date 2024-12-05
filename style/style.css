@@ -10,13 +10,16 @@
 body {
     background-image: url("../images/fond.png");
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
 
 /* Je configure mon header */
 header {
     margin: 0 2% 0 2%;
-    background-color: #948f8b;
-    opacity: 0.80;
+    background-color: rgb(148, 143, 139, 0.80);
+    /* opacity: 0.80; */
     width: 96%;
     height: 100px;
     color: #0f7023;
@@ -31,9 +34,7 @@ header {
 /* Je configure mon formulaire */
 form {
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin-left: 2%;
 }
 
 /* Je met les label de mon formulaire en couleur et en gras */
@@ -41,73 +42,94 @@ form {
     color: #0f7023;
     font-weight: bold;
 }
-
+/* Je configure mon main qui contient mon form pour qu'il s'affiche en gris tout en étant transparent  */
 main {
     margin: 20px 2% 0 2%;
-    background-color: #948f8b;
-    opacity: 0.80;
+    background-color: rgb(148, 143, 139, 0.80);
     width: 96%;
-    height: 500px;
+    height: 100%;
 }
 
-
+/* Je configure le style de mes boutons  */
 .bouton {
     background-color: #0f7023;
-    width: 100px;
-    height: 30px;
     color: white;
     border-radius: 5px;
     border-color: white;
 }
+/* Je met un leger hover lorsqu'on survole le bouton */
+.bouton:hover {
+    background-color: green;
+}
 
-
-
+/* Je modifie la couleur des bordures des champs de mon formulaires */
 .champs {
     border-color: #0f7023;
 }
-
+/* Je modifie la couleur du texte qui s'affichera à droite en cas d'erreur de saisie */
 .obligatoire {
     color: #cf0202;
     font-weight: bold;
-    margin-left: 15%;
 }
-
+/* J'espace les lignes de mon formulaire */
 #ligne1,
 #ligne2,
 #ligne3,
 #ligne4,
 #ligne5 {
-    display: flex;
-    margin-bottom: 40px;
-    margin-left: 20px;
+    margin-bottom: 50px;
 }
 
 
 #ligne6 {
+    padding-bottom: 20px;
     margin-top: 20px;
     display: flex;
- }
-
-#s1 {
-    margin-right: 40%;
+    justify-content: center;
 }
 
-#s2 {
-    margin-right: 38%;
+/* J'espace mes boutons */
+#send{
+    margin-right: 6%;
+    width: 150px;
+}
+#reset {
+    margin-left: 17vw;
+    width: 150px;
 }
 
-#s3 {
-    margin-right: 31.5%;
+/* ----------------------------------------- MODAL ---------------------------------------------------------------------- */
+#modalTitle {
+    color: #0f7023;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 100%;
+    padding-top: 20px;
+    height: 150px;
+    font-size: 3.5em;
+    background-color: #948f8b;
+    text-align: center;
+}
+.modal-header {
+    display: flex;
+    justify-content: center;
+}
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-#s4 {
-    margin-right: 39.5%;
+#endModal {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#modalP1 {
+    margin-top: 20px;
+    font-size: 1.2em;
 }
 
-#s5 {
-    margin-right: 31.5%;
-}
-
-#send {
-    margin: 0 25% 0 14%;
+#modalP2 {
+    margin-top: 20px;
+    font-size: 1.2em;
 }
